@@ -13,7 +13,7 @@ const StartServer = async () => {
 
   app
     .listen(port, () => {
-      console.log(`listening to port ${port}`);
+      console.log(`Shopping listening to port ${port}`);
     })
     .on("error", (err) => {
       console.log(err);

@@ -6,7 +6,6 @@ module.exports = async () => {
     await mongoose.connect("mongodb://localhost:27017/ms_demo", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
     });
     console.log("Db Connected");
   } catch (error) {

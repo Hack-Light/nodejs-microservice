@@ -3,10 +3,9 @@ const { DB_URL } = require("../config");
 
 module.exports = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/ms_demo", {
+    await mongoose.connect(DB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
     });
     console.log("Db Connected");
   } catch (error) {
