@@ -8,5 +8,5 @@ app.use("/", (req, res, next) => {
 });
 
 app.listen(3003, () => {
-  console.log("listening on port 3002");
+  console.log("Shpping is listening on port  3003");
 });
